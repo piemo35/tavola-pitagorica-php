@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<style>
+		input{
+			height: 40px;
+			width: 50%;
+			border-radius: .25rem;
+			
+			}
+	</style>
+	<div style="text-align: center; width:50%; margin-left:25%">
+<h1> Menu</h1>
+<table border=1 cellpadding=5>
+	
+<!--
+
+$limite=10;
+for($riga=1; $riga <= $limite; $riga++)
+    {
+        echo '<tr>';
+        
+            for($colonna=1;$colonna<=$limite;$colonna++)
+            {
+                $valore= $riga * $colonna;
+                echo '<td>'; echo $valore; echo '</td>';
+            }
+        echo '</tr>';
+    }
+-->
+
+<br>
+<form name="file" action="tavolafile.php" method="get">
+<input type="submit" name="funzionefile" value="scrivi tabella su file">
+</form>
+<br>
+
+<form name="file" action="matrice.php" method="get">
+<input type="submit" name="funzionefile" value="scrivi tabella su matrice">
+</form>
+<br>
+
+<form name="file" action="primariaX.php" method="get">
+<input type="submit" name="funzionefile" value="scrivi X nella diagonale Primaria">
+</form>
+
+<br>
+<form name="file" action="secondariaX.php" method="get">
+<input type="submit" name="funzionefile" value="scrivi X nella diagonale Secondaria">
+</form>
+
+<br>
+<form name="file" action="righepari5.php" method="get">
+<input type="submit" name="funzionefile" value="incrementa le righe pari di 5">
+</form>
+
+<br>
+<form name="file" action="colonnedispari7.php" method="get">
+<input type="submit" name="funzionefile" value="decrementa le colonne dispari di 7">
+</form>
+
+<br>
+<form name="file" action="sommaprimaria.php" method="get">
+<input type="submit" name="funzionefile" value="somma i valori della diagonale primaria">
+</form>
+
+<br>
+<form name="file" action="colonnedispari7.php" method="get">
+<input type="submit" name="funzionefile" value="decrementa le colonne dispari di 7">
+</form>
+
+<br>
+<form name="file" action="sommarighe.php" method="get">
+<input type="submit" name="funzionefile" value="somma tutti i valori di ogni riga">
+</form>
+
+<br>
+<form name="file" action="sommacolonne.php" method="get">
+<input type="submit" name="funzionefile" value="somma tutti i valori di ogni colonna">
+</form>
+
+<br>
+<form name="file" action="invertirighe.php" method="get">
+<input type="submit" name="funzionefile" value="inverti i valori di ogni riga">
+</form>
+
+<br>
+<form name="file" action="inverticolonne.php" method="get">
+<input type="submit" name="funzionefile" value="inverti i valori di ogni colonna">
+</form>
+
+<br>
+<form name="file" action="invertidiagonale.php" method="get">
+<input type="submit" name="funzionefile" value="inverti i valori della diagonale principale">
+</form>
+
+
+</table>
+</div>
+</body>
+</html>
